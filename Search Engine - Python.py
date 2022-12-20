@@ -107,39 +107,7 @@ while search != "/close":
             searchs = []
             searchs = sorted(items)
         elif a == 'n':
-            print('Canceled.')
-            
-    elif search == "/scratchattach":
-        print('Scratchattach can accses information via your Scratch (scratch.mit.edu) profile. If you have a scratch profile, this is usable with you.')
-        a = 0
-        prompt = 'Do you have Scratch profile? y/n.'
-        while a != 'y' and a != 'n':
-            a = input(prompt)
-            a = a.lower()
-            prompt = 'Your information could not be understood. Do you have a Scratch profile'
-        if a == 'y':
-            print('Great. You will need to give us information such as your Scrach username or password.')
-            username = input('To start, what is your Scratch username? To cancel, enter "n."')
-            if a == 'n':
-                None
-            else:
-                print('Thanks! Now we need the password to your scratch account. NO INFORMATION IS BEING STORED.')
-                password = input('')
-                if password == 'n':
-                    None
-                else:
-                    print('Thanks again')
-                    print('Loading... If this frame goes away, the name and/or password is not valid.')
-                    session = scratch3.login(username, password)
-                    print('Alright, hello ' + str(username) + '. You can now use this program to retrive information from your profile.')
-                    
-                    
-                
-            
-            
-        elif a == 'n':
-            print('Canceled.')
-    
+            print('Canceled.')       
     else:
         item1 = 0
         results = []
